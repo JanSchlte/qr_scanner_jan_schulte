@@ -1,0 +1,36 @@
+name: qr_scanner
+description: QR-App, entworfen für den Informatik Unterricht bei Frau Michels
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+
+    #Todo: Hier musste ich alle Plugins installieren, welche ich extern für meine App benötigte
+    sdk: flutter
+    #Hier habe ich die ganze externe Software hinzugefügt.
+  cupertino_icons: ^0.1.2
+  # Dieses Icon-Pack wird bei jedem Flutter-Projekt default inkludiert
+  qrscan: ^0.2.17
+  # Dieses Plug-In enthält die QR-Software, welche mir die Methodenerstellung extrem vereinfacht
+  url_launcher: ^5.4.1
+  # Dieses Plug-In ist nötig, um den Link in einem Browser öffnen zu können
+  share: ^0.6.3+5
+  # Dieses Plug-In ist nötig, um den Link erstellten mit anderen zu teilen
+  image_gallery_saver: ^1.2.2
+  # Dieses Plug-In ist nötig, um den generierten QR-Code in der lokalen Gallerie speichern zu können
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Pacifico
+      fonts:
+        - asset: fonts/Pacifico-Regular.ttf
+#Hier wurde eine externe Font-Family hinzugefügt, welche mMn. in den home_screen gut gepasst hat (gefunden im Internet)
